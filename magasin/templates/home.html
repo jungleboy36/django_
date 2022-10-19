@@ -1,0 +1,27 @@
+<html>
+<body>
+ <h1>Liste des articles</h1>
+ <table border="1">
+ <thead>
+ <tr>
+ <td>ID</td>
+ <td>Libelle</td>
+ <td>Prix (DT)</td>
+ <td>Quantité</td>
+ <td>Date d'ajout</td>
+ </tr>
+ </thead>
+ <tbody>
+ {% for a in art %}
+ <tr>
+ <td>{{ a.id }}</td>
+ <td>{{ a.libelle }}</td>
+ <td>{{ a.prix }}</td>
+ <td>{{ a.qte }}</td>
+ <td>{{ a.dateAjout }}</td>
+ </tr>
+ {% endfor %}
+ </tbody> 
+ </table>
+</body>
+</html>
